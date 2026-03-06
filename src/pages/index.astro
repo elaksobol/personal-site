@@ -1,22 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
-const { base } = Astro.config;
+// This is the correct way to get the base path in Astro 5
+const base = import.meta.env.BASE_URL;
 ---
 <Layout title="Ela Sobol | Home">
-  <section style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
+  <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; margin-top: 2rem;">
     <div style="flex: 1; min-width: 300px;">
-      <h1>Hi, I'm Ela! </h1>
+      <h1>Hi, I'm Ela Sobol </h1>
       <p>
-        I'm a Data Science and Psychology student at <strong>William & Mary</strong>[cite: 4, 5]. 
-        I'm passionate about the intersection of human behavior and data analytics[cite: 5, 7].
+        I am a Junior at <strong>William & Mary</strong> studying Data Science and Psychology.
+        Currently, I am a Research Assistant at the <strong>DIGI Lab</strong>[cite: 14].
       </p>
       <p>
-        Currently, I serve as a Research Assistant in the <strong>DIGI Lab</strong> [cite: 14] 
-        and lead the <strong>Pointe Blank Dance Company</strong> as President[cite: 24].
+        I also lead the <strong>Pointe Blank Dance Company</strong> as President.
       </p>
+      <a href={`${base}/resume`} style="background: #1a5fb4; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-block;">View My Resume</a>
     </div>
     <div style="flex: 1; min-width: 300px; text-align: center;">
-      <img src={`${base}/me.jpeg`} alt="Ela in London" style="width: 100%; max-width: 400px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
+      <img src={`${base}/me.jpg`} alt="Ela Sobol" style="width: 100%; max-width: 350px; border-radius: 20px;" />
     </div>
-  </section>
+  </div>
 </Layout>
