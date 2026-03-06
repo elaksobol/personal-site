@@ -5,5 +5,6 @@ export default defineConfig({
   site: 'https://elaksobol.github.io',
   // This tells Astro the folder name on GitHub (must match your repo name)
   base: '/personal-site', 
+  trailingSlash: 'always',
   output: 'static',
 });
