@@ -1,1 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+const base = '/personal-site';
+---
 
+<Layout title="Resume | Ela Sobol">
+  <main style="max-width: 800px; margin: 0 auto; padding: 2rem; font-family: sans-serif;">
+    <header style="text-align: center; margin-bottom: 2rem;">
+      <h1>Ela Sobol</h1>
+      <p>Williamsburg, VA | <a href="https://elaksobol.github.io/personal-site/">Website</a></p>
+    </header>
+
+    <section>
+      <h2>Education</h2>
+      <hr />
+      <div style="display: flex; justify-content: space-between;">
+        <strong>College of William & Mary</strong>
+        <span>May 2026</span>
+      </div>
+      <p>B.S. in Data Science and Psychology | GPA: 3.96</p>
+      <ul>
+        <li>Dean’s List (Fall 2022 – Fall 2024)</li>
+        <li>Relevant Coursework: Data Science, Social Psychology, Developmental Psychology</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Research Experience</h2>
+      <hr />
+      <div style="display: flex; justify-content: space-between;">
+        <strong>Research Assistant | DIGI Lab</strong>
+        <span>Aug 2023 – Present</span>
+      </div>
+      <ul>
+        <li>Organize and clean data using SPSS for social psychology research.</li>
+        <li>Presented findings at the William & Mary Undergraduate Research Symposium.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Leadership & Involvement</h2>
+      <hr />
+      <div style="display: flex; justify-content: space-between;">
+        <strong>President | Pointe Blank Dance Company</strong>
+        <span>May 2024 – Present</span>
+      </div>
+      <ul>
+        <li>Manage over 70 members and university relations.</li>
+        <li>Coordinate logistics for semesterly dance showcases.</li>
+      </ul>
+    </section>
+    
+    <div style="margin-top: 3rem; text-align: center;">
+      <a href={`${base}/`} style="color: #007bff; text-decoration: none;">← Back Home</a>
+    </div>
+  </main>
+</Layout>
