@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+const { base } = Astro.config;
+---
+<Layout title="Ela Sobol | Home">
+  <section style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
+    <div style="flex: 1; min-width: 300px;">
+      <h1>Hi, I'm Ela! </h1>
+      <p>
+        I'm a Data Science and Psychology student at <strong>William & Mary</strong>[cite: 4, 5]. 
+        I'm passionate about the intersection of human behavior and data analytics[cite: 5, 7].
+      </p>
+      <p>
+        Currently, I serve as a Research Assistant in the <strong>DIGI Lab</strong> [cite: 14] 
+        and lead the <strong>Pointe Blank Dance Company</strong> as President[cite: 24].
+      </p>
+    </div>
+    <div style="flex: 1; min-width: 300px; text-align: center;">
+      <img src={`${base}/me.jpg`} alt="Ela in London" style="width: 100%; max-width: 400px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
+    </div>
+  </section>
+</Layout>
