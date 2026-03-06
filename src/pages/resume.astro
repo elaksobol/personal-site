@@ -4,54 +4,56 @@ const base = '/personal-site';
 ---
 
 <Layout title="Resume | Ela Sobol">
-  <main style="max-width: 800px; margin: 0 auto; padding: 2rem; font-family: sans-serif;">
-    <header style="text-align: center; margin-bottom: 2rem;">
-      <h1>Ela Sobol</h1>
-      <p>Williamsburg, VA | <a href="https://elaksobol.github.io/personal-site/">Website</a></p>
+  <main style="max-width: 900px; margin: 0 auto; padding: 3rem 2rem; font-family: 'Helvetica Neue', Arial, sans-serif; color: #333; line-height: 1.6;">
+    
+    <header style="text-align: center; margin-bottom: 2.5rem;">
+      <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem; color: #1a1a1a;">ELA SOBOL</h1>
+      <p style="font-size: 1.1rem;">
+        Williamsburg, VA | <a href="mailto:your-email@wm.edu" style="color: #007bff; text-decoration: none;">Email Me</a> | 
+        <a href="https://linkedin.com/in/yourprofile" style="color: #007bff; text-decoration: none;">LinkedIn</a>
+      </p>
     </header>
 
-    <section>
-      <h2>Education</h2>
-      <hr />
-      <div style="display: flex; justify-content: space-between;">
-        <strong>College of William & Mary</strong>
-        <span>May 2026</span>
+    <section style="margin-bottom: 2rem;">
+      <h2 style="border-bottom: 2px solid #333; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 1px;">Education</h2>
+      <div style="margin-top: 1rem;">
+        <div style="display: flex; justify-content: space-between; font-weight: bold;">
+          <span>College of William & Mary</span>
+          <span>Williamsburg, VA</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-style: italic; color: #555;">
+          <span>Bachelor of Science in Data Science and Psychology</span>
+          <span>May 2026</span>
+        </div>
+        <ul style="margin-top: 0.5rem;">
+          <li>Cumulative GPA: 3.96 | Dean’s List (Fall 2022 – Fall 2024)</li>
+          <li>Relevant Coursework: Social Psychology, Developmental Psychology, Data Science</li>
+        </ul>
       </div>
-      <p>B.S. in Data Science and Psychology | GPA: 3.96</p>
-      <ul>
-        <li>Dean’s List (Fall 2022 – Fall 2024)</li>
-        <li>Relevant Coursework: Data Science, Social Psychology, Developmental Psychology</li>
-      </ul>
+
+      <div style="margin-top: 1.5rem;">
+        <div style="display: flex; justify-content: space-between; font-weight: bold;">
+          <span>University of Cambridge (Pembroke College)</span>
+          <span>Cambridge, UK</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-style: italic; color: #555;">
+          <span>Study Abroad</span>
+          <span>Summer 2024</span>
+        </div>
+        <ul style="margin-top: 0.5rem;">
+          <li>Coursework: Developmental Psychology and The Economics of Contemporary Britain</li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <h2>Research Experience</h2>
-      <hr />
-      <div style="display: flex; justify-content: space-between;">
-        <strong>Research Assistant | DIGI Lab</strong>
-        <span>Aug 2023 – Present</span>
-      </div>
-      <ul>
-        <li>Organize and clean data using SPSS for social psychology research.</li>
-        <li>Presented findings at the William & Mary Undergraduate Research Symposium.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Leadership & Involvement</h2>
-      <hr />
-      <div style="display: flex; justify-content: space-between;">
-        <strong>President | Pointe Blank Dance Company</strong>
-        <span>May 2024 – Present</span>
-      </div>
-      <ul>
-        <li>Manage over 70 members and university relations.</li>
-        <li>Coordinate logistics for semesterly dance showcases.</li>
-      </ul>
-    </section>
-    
-    <div style="margin-top: 3rem; text-align: center;">
-      <a href={`${base}/`} style="color: #007bff; text-decoration: none;">← Back Home</a>
-    </div>
-  </main>
-</Layout>
+    <section style="margin-bottom: 2rem;">
+      <h2 style="border-bottom: 2px solid #333; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 1px;">Research & Work Experience</h2>
+      
+      <div style="margin-top: 1rem;">
+        <div style="display: flex; justify-content: space-between; font-weight: bold;">
+          <span>Research Assistant | DIGI Lab</span>
+          <span>Aug 2023 – Present</span>
+        </div>
+        <ul style="margin-top: 0.5rem;">
+          <li>Perform data cleaning and entry using SPSS for social psychology research</li>
+          <li>Presented research findings at the William & Mary Undergraduate Research Symposium
