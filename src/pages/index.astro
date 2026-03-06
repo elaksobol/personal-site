@@ -1,23 +1,53 @@
 ---
 import Layout from '../layouts/Layout.astro';
-// This is the correct way to get the base path in Astro 5
 const base = import.meta.env.BASE_URL;
 ---
-<Layout title="Ela Sobol | Home">
-  <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; margin-top: 2rem;">
-    <div style="flex: 1; min-width: 300px;">
-      <h1>Hi, I'm Ela Sobol </h1>
-      <p>
-        I am a Junior at <strong>William & Mary</strong> studying Data Science and Psychology.
-        Currently, I am a Research Assistant at the <strong>DIGI Lab</strong>.
-      </p>
-      <p>
-        I also lead the <strong>Pointe Blank Dance Company</strong> as President.
-      </p>
-      <a href={`${base}/resume`} style="background: #1a5fb4; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-block;">View My Resume</a>
+
+<Layout title="Home | Ela Sobol">
+  <section style="padding: 4rem 0; text-align: center; background: linear-gradient(to bottom, #f8f9fa, #ffffff);">
+    <h1 style="font-size: 3rem; color: #1a1a1a; margin-bottom: 1.5rem;">Hi, I'm Ela Sobol</h1>
+    <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto; line-height: 1.8; color: #444;">
+      I am a <strong>Data Science (AI track) and Psychology</strong> double-major at the <strong>College of William & Mary</strong>. 
+      I am fascinated by the intersection of artificial intelligence and psychology—specifically, how we can leverage AI tools 
+      to maximize efficiency while preserving essential human elements like creativity[cite: 4, 5].
+    </p>
+  </section>
+
+  <section style="padding: 3rem 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+    <div style="padding: 1.5rem; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+      <h3 style="color: #1a5fb4;">Research</h3>
+      <p>As a <strong>Research Assistant at the DiGI Lab</strong>, I support faculty psychology research through meticulous data collection, cleaning, and analysis[cite: 12, 13].</p>
     </div>
-    <div style="flex: 1; min-width: 300px; text-align: center;">
-      <img src={`${base}/me.jpg`} alt="Ela Sobol" style="width: 100%; max-width: 350px; border-radius: 20px;" />
+    
+    <div style="padding: 1.5rem; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+      <h3 style="color: #1a5fb4;">Leadership</h3>
+      <p>I lead the <strong>Pointe Blank Dance Company</strong> as President, managing operations and logistics for a 70-member organization[cite: 21, 22].</p>
     </div>
-  </div>
+
+    <div style="padding: 1.5rem; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+      <h3 style="color: #1a5fb4;">Campus Presence</h3>
+      <p>Working for <strong>Undergraduate Admission</strong>, I represent William & Mary as a Tour Guide, sharing our history and values with prospective families[cite: 19, 20].</p>
+    </div>
+  </section>
+
+  <section style="margin-top: 4rem; padding: 3rem; background: #f0f4f8; border-radius: 20px;">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Outside of the Lab...</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 3rem; justify-content: center; align-items: flex-start;">
+      
+      <div style="flex: 1; min-width: 300px;">
+        <h3>🌲 Adventure & Outdoors</h3>
+        <p>
+          When I'm not looking at data, you'll find me dancing, camping, or hiking. I've already camped in two National Parks—<strong>Shenandoah and Acadia</strong>—and my goal is to visit as many as I possibly can.
+        </p>
+      </div>
+
+      <div style="flex: 1; min-width: 300px;">
+        <h3> Meet Mercedes & Benz</h3>
+        <p>
+          At home, I have two cats that I adore named <strong>Mercedes and Benz</strong>. They are a huge part of my life and definitely help keep that "human element" in focus.
+        </p>
+      </div>
+
+    </div>
+  </section>
 </Layout>
