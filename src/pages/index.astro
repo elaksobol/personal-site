@@ -4,55 +4,63 @@ const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Home | Ela Sobol">
-  <section style="padding: 5rem 2rem; text-align: center; background-color: #e3f2fd; border-bottom: 5px solid #fff;">
-    <div style="margin-bottom: 2rem;">
-      <img src={`${base}/me.jpeg`} alt="Ela Sobol" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 5px solid white; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
+  <section style="padding: 5rem 2rem; background-color: #e3f2fd; border-bottom: 5px solid #fff;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 4rem; flex-wrap: wrap;">
+      
+      <div style="flex: 2; min-width: 300px;">
+        <h1 style="font-size: 3.5rem; color: #1565c0; margin-bottom: 1.5rem;">Hi, I'm Ela Sobol</h1>
+        <p style="font-size: 1.25rem; line-height: 1.8; color: #2c3e50;">
+          I am a <strong>Data Science (AI track) and Psychology</strong> double-major at the <strong>College of William & Mary</strong>[cite: 4, 5]. 
+          I am fascinated by the intersection of artificial intelligence and psychology. Specifically, I am interested in how we can use artificial intelligence tools 
+          to maximize efficiency while preserving essential emotional and creative human elements.
+        </p>
+      </div>
+
+      <div style="flex: 1; display: flex; justify-content: center;">
+        <img src={`${base}/me.jpeg`} alt="Ela Sobol" style="width: 350px; height: 450px; border-radius: 20px; object-fit: cover; box-shadow: 20px 20px 0px #fff;" />
+      </div>
+
     </div>
-    <h1 style="font-size: 3rem; color: #1565c0; margin-bottom: 1.5rem;">Hi, I'm Ela Sobol</h1>
-    <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto; line-height: 1.8; color: #2c3e50;">
-      I am a <strong>Data Science (AI track) and Psychology</strong> double-major at the <strong>College of William & Mary</strong>. 
-      I am fascinated by the intersection of artificial intelligence and psychology. Specifically, I am interested in how we can use artificial intelligence tools 
-      to maximize efficiency while preserving essential emotional and creative human elements.
-    </p>
   </section>
 
   <section style="padding: 4rem 2rem; max-width: 1100px; margin: 0 auto;">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
       <div style="background: #e8f5e9; padding: 2rem; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid rgba(46, 125, 50, 0.1);">
         <h3 style="color: #2e7d32; margin-top: 0;">Research</h3>
-        <p>As a <strong>Research Assistant at the DiGI Lab</strong>, I support faculty political psychology research through meticulous data collection, cleaning, and analysis.</p>
+        <p>As a <strong>Research Assistant at the DiGI Lab</strong>, I support faculty political psychology research through data collection and analysis[cite: 12, 13].</p>
       </div>
       
       <div style="background: #e8f5e9; padding: 2rem; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid rgba(46, 125, 50, 0.1);">
         <h3 style="color: #2e7d32; margin-top: 0;">Leadership</h3>
-        <p>I lead the <strong>Pointe Blank Dance Company</strong> as President, managing operations and logistics for a 70-member organization.</p>
+        <p>I lead the <strong>Pointe Blank Dance Company</strong> as President, overseeing a 70-member organization[cite: 21, 22].</p>
       </div>
 
       <div style="background: #e8f5e9; padding: 2rem; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid rgba(46, 125, 50, 0.1);">
         <h3 style="color: #2e7d32; margin-top: 0;">Campus Presence</h3>
-        <p>Working for <strong>Undergraduate Admissions</strong>, I represent William & Mary as a Tour Guide, sharing our history and values with prospective families.</p>
+        <p>Working for <strong>Undergraduate Admissions</strong>, I represent William & Mary as a Campus Tour Guide[cite: 19].</p>
       </div>
     </div>
   </section>
 
   <section style="margin: 2rem auto 5rem; padding: 3.5rem; background: #fff0f5; border-radius: 30px; max-width: 1000px; border: 1px solid rgba(194, 24, 91, 0.05);">
     <h2 style="text-align: center; margin-bottom: 2.5rem; color: #ad1457;">Outside of academics...</h2>
-    <div style="display: flex; flex-wrap: wrap; gap: 3rem; justify-content: center; align-items: flex-start;">
+    
+    <div style="display: flex; flex-wrap: wrap; gap: 4rem; justify-content: center;">
       
-      <div style="flex: 1; min-width: 300px;">
-        <img src={`${base}/shen.jpeg`} alt="Camping in Shenandoah" style="width: 100%; height: 250px; object-fit: cover; border-radius: 15px; margin-bottom: 1.5rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
-        <h3 style="color: #ad1457; margin-top: 0;">The Outdoors</h3>
-        <p>
+      <div style="flex: 1; min-width: 300px; text-align: center;">
+        <h3 style="color: #ad1457;">The Outdoors</h3>
+        <p style="margin-bottom: 1.5rem;">
           In my free time, I love dancing, camping, and hiking. I've already camped in two National Parks (<strong>Shenandoah and Acadia</strong>) and my dream is to visit as many as possible.
         </p>
+        <img src={`${base}/shen.jpeg`} alt="Camping in Shenandoah" style="width: 100%; height: 450px; object-fit: cover; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);" />
       </div>
 
-      <div style="flex: 1; min-width: 300px;">
-        <img src={`${base}/cats.jpeg`} alt="Mercedes and Benz" style="width: 100%; height: 250px; object-fit: cover; border-radius: 15px; margin-bottom: 1.5rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
-        <h3 style="color: #ad1457; margin-top: 0;">My cats!</h3>
-        <p>
+      <div style="flex: 1; min-width: 300px; text-align: center;">
+        <h3 style="color: #ad1457;">My cats!</h3>
+        <p style="margin-bottom: 1.5rem;">
           At home, I have two cats that I love named <strong>Mercedes and Benz</strong>. They are such good companions, and I really enjoy spending time with them.
         </p>
+        <img src={`${base}/cats.jpeg`} alt="Mercedes and Benz" style="width: 100%; height: 450px; object-fit: cover; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);" />
       </div>
 
     </div>
