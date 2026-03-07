@@ -2,8 +2,8 @@
 import Layout from '../../layouts/Layout.astro';
 const base = '/personal-site';
 
-// Your 8-photo gallery array
-const photos = ['1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg', '6.jpeg', '7.jpeg', '8.jpeg'];
+// Your 14-photo gallery array (1.jpeg through 14.jpeg)
+const photos = Array.from({ length: 14 }, (_, i) => `${i + 1}.jpeg`);
 ---
 
 <Layout title="Cambridge Summer | Ela Sobol">
@@ -23,7 +23,7 @@ const photos = ['1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg', '6.jpeg', '7.j
 
     <h2 style="color: #1565c0;">Academics</h2>
     <p>
-      During the program, I took two  classes: British Developmental Psychologists (my advanced psychology elective) 
+      During the program, I took two classes: British Developmental Psychologists (my advanced psychology elective) 
       and a history of theatre class called Playing History in the UK. Learning about the significant advancements made by British psychologists in the field of developmental psychology  
       while simultaneously discussing works of theatre performance throughout history gave me a unique, interdisciplinary perspective.
     </p>
@@ -48,12 +48,13 @@ const photos = ['1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg', '6.jpeg', '7.j
       I loved the challenge and excitement of navigating new cities and meeting strangers from around the world.
     </p>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; margin-top: 3rem;">
+    <h2 style="color: #1565c0; margin-top: 4rem; text-align: center;">Gallery</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 1.5rem;">
       {photos.map((photo) => (
         <img 
           src={`${base}/${photo}`} 
           alt="Cambridge Trip Photo" 
-          style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
+          style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s;"
         />
       ))}
     </div>
