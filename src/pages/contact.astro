@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+const base = '/personal-site';
+---
+
+<Layout title="Contact | Ela Sobol">
+  <main style="max-width: 800px; margin: 0 auto; padding: 6rem 2rem; text-align: center; color: #2c3e50;">
+    
+    <h1 style="font-size: 3rem; color: #1565c0; margin-bottom: 1.5rem;">Let's Connect!</h1>
+    
+    <p style="font-size: 1.25rem; line-height: 1.8; margin-bottom: 3rem; color: #444;">
+      Whether you're interested in my background, share my interests, or just want to chat—I'd love to hear from you!
+    </p>
+
+    <div style="display: flex; flex-direction: column; gap: 1.5rem; align-items: center;">
+      
+      <a href="mailto:elaksobol@gmail.com" 
+         style="background: #1565c0; color: white; text-decoration: none; padding: 1.2rem 2.5rem; border-radius: 50px; font-weight: bold; font-size: 1.1rem; width: 280px; box-shadow: 0 4px 15px rgba(21, 101, 192, 0.2); transition: transform 0.2s;">
+        Send me an Email
+      </a>
+
+      <a href="https://www.linkedin.com/in/ela-sobol" 
+         target="_blank" 
+         style="background: #0077b5; color: white; text-decoration: none; padding: 1.2rem 2.5rem; border-radius: 50px; font-weight: bold; font-size: 1.1rem; width: 280px; box-shadow: 0 4px 15px rgba(0, 119, 181, 0.2); transition: transform 0.2s;">
+        Connect on LinkedIn
+      </a>
+
+    </div>
+
+    <footer style="margin-top: 6rem; padding-top: 2rem; border-top: 1px solid #eee;">
+      <a href={`${base}/`} style="color: #666; text-decoration: none; font-weight: bold;">← Back to Home</a>
+    </footer>
+
+  </main>
+</Layout>
