@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+const base = '/personal-site';
+---
+
+<Layout title="Blog | Ela Sobol">
+  <main style="max-width: 800px; margin: 0 auto; padding: 4rem 2rem;">
+    <h1 style="color: #1565c0; font-size: 2.5rem; margin-bottom: 2rem;">Thoughts & Insights</h1>
+    
+    <article style="padding: 2rem; background: #fce4ec; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+      <h2 style="margin-top: 0; color: #ad1457;">Vibe Coding: How I Built This Site with Gemini 3 Flash</h2>
+      <p style="color: #666; font-style: italic;">March 6, 2026</p>
+      <p>
+        As a Data Science and Psychology double-major, I’ve always been fascinated by how we can use AI to maximize efficiency without losing the human element. 
+        I decided to put that to the test by building this portfolio using "vibe coding"...
+      </p>
+      <a href={`${base}/blog/vibe-coding`} style="color: #ad1457; font-weight: bold; text-decoration: none;">Read More →</a>
+    </article>
+  </main>
+</Layout>
