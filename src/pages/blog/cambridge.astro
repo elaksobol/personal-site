@@ -7,59 +7,59 @@ const photos = Array.from({ length: 14 }, (_, i) => `${i + 1}.jpeg`);
 ---
 
 <Layout title="Cambridge Summer | Ela Sobol">
-  <article style="max-width: 800px; margin: 0 auto; padding: 5rem 2rem; line-height: 1.8; color: #2c3e50;">
+  <article style="max-width: 800px; margin: 0 auto; padding: 3rem 2rem; line-height: 1.6; color: #2c3e50;">
     
-    <header style="text-align: center; margin-bottom: 4rem;">
-      <h1 style="font-size: 3rem; color: #1565c0; margin-bottom: 1rem;">Postcards from Cambridge</h1>
-      <p style="color: #666; font-size: 1.2rem;">Summer 2025 • Christ's College</p>
+    <header style="text-align: center; margin-bottom: 2rem;">
+      <h1 style="font-size: 3rem; color: #1565c0; margin-bottom: 0.5rem;">Postcards from Cambridge</h1>
+      <p style="color: #666; font-size: 1.1rem;">Summer 2025 • Christ's College</p>
     </header>
 
-    <section style="background: #e3f2fd; padding: 2.5rem; border-radius: 20px; margin-bottom: 3rem;">
-      <p style="font-size: 1.15rem; margin: 0;">
+    <section style="background: #e3f2fd; padding: 1.5rem 2rem; border-radius: 20px; margin-bottom: 2rem;">
+      <p style="font-size: 1.1rem; margin: 0;">
         This past summer, I had the incredible opportunity of studying abroad in <strong>Cambridge, England for 5 weeks.</strong> 
         It was a psychology program based at Christ's College, and my experience in the city was amazing.
       </p>
     </section>
 
-    <h2 style="color: #1565c0;">Academics</h2>
-    <p>
+    <h2 style="color: #1565c0; margin-bottom: 0.5rem;">Academics</h2>
+    <p style="margin-bottom: 1.5rem;">
       During the program, I took two classes: British Developmental Psychologists (my advanced psychology elective) 
       and a history of theatre class called Playing History in the UK. Learning about the significant advancements made by British psychologists in the field of developmental psychology  
       while simultaneously discussing works of theatre performance throughout history gave me a unique, interdisciplinary perspective.
     </p>
 
-    <div style="display: flex; gap: 2rem; align-items: center; margin: 3rem 0; flex-wrap: wrap;">
+    <div style="display: flex; gap: 1.5rem; align-items: center; margin: 2rem 0; flex-wrap: wrap;">
       <div style="flex: 1; min-width: 300px;">
-        <h2 style="color: #1565c0;">History</h2>
-        <p>
+        <h2 style="color: #1565c0; margin-bottom: 0.5rem;">History</h2>
+        <p style="margin: 0;">
           One of my favorite things about Cambridge was learning the history of the city itself. I loved visiting The Eagle, 
           the famous pub where Watson and Crick announced their discovery of the structure of DNA. I also got the chance to see "Newton's Apple Tree".
           Being able to stand in the same spots 
           where monumental scientific history was made was truly inspiring.
         </p>
       </div>
-      <img src={`${base}/me.jpeg`} alt="Me in Cambridge" style="width: 280px; height: 350px; object-fit: cover; border-radius: 15px; box-shadow: 15px 15px 0px #e3f2fd;" />
+      <img src={`${base}/me.jpeg`} alt="Me in Cambridge" style="width: 260px; height: 320px; object-fit: cover; border-radius: 15px; box-shadow: 10px 10px 0px #e3f2fd;" />
     </div>
 
-    <h2 style="color: #1565c0;">Exploring Europe</h2>
-    <p>
-      When I wasn't in classes, I got the chance to travel! I took the train to Paris one weekend, Edinburgh on another, and went on a group tour bus trip to see Bath, and
+    <h2 style="color: #1565c0; margin-bottom: 0.5rem;">Exploring Europe</h2>
+    <p style="margin-bottom: 2rem;">
+      When I wasn't in classes, I got the chance to travel! I took the train to Paris on one weekend, Edinburgh on another, and went on a group tour bus trip to see Bath, and
       Stonehenge. Witnessing these famous sights and learning about new cultures was just as educational as my classes themselves. 
       I loved the challenge and excitement of navigating new cities and meeting strangers from around the world.
     </p>
 
-    <h2 style="color: #1565c0; margin-top: 4rem; text-align: center;">Gallery</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 1.5rem;">
+    <h2 style="color: #1565c0; margin-top: 2rem; margin-bottom: 1rem; text-align: center;">Gallery</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px;">
       {photos.map((photo) => (
         <img 
           src={`${base}/${photo}`} 
           alt="Cambridge Trip Photo" 
-          style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s;"
+          style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);"
         />
       ))}
     </div>
 
-    <footer style="margin-top: 5rem; padding-top: 2rem; border-top: 1px solid #eee;">
+    <footer style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #eee;">
       <a href={`${base}/blog`} style="color: #1565c0; text-decoration: none; font-weight: bold;">← Back to Blog Feed</a>
     </footer>
   </article>
