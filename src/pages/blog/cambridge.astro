@@ -1,0 +1,51 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const base = '/personal-site';
+---
+
+<Layout title="Cambridge Summer | Ela Sobol">
+  <article style="max-width: 800px; margin: 0 auto; padding: 5rem 2rem; line-height: 1.8; color: #2c3e50;">
+    
+    <header style="text-align: center; margin-bottom: 4rem;">
+      <h1 style="font-size: 3rem; color: #1565c0; margin-bottom: 1rem;">Postcards from Cambridge</h1>
+      <p style="color: #666; font-size: 1.2rem;">Summer 2025 • Christ's College</p>
+    </header>
+
+    <section style="background: #e3f2fd; padding: 2.5rem; border-radius: 20px; margin-bottom: 3rem;">
+      <p style="font-size: 1.15rem; margin: 0;">
+        This past summer I had the incredible opportunity of studying abroad in <strong>Cambridge, England for 5 weeks.</strong> 
+        It was a psychology program based at <strong>Christ's College</strong>, and the immersion into the history of the city was unlike anything else.
+      </p>
+    </section>
+
+    <h2 style="color: #1565c0;">Academic Immersion</h2>
+    <p>
+      During the program, I took two fascinating classes: <strong>British Developmental Psychologists</strong> (my advanced psychology elective) 
+      and a history of theatre class called <strong>Playing History in the UK</strong>. Learning about the development of the mind 
+      while simultaneously exploring the history of British performance gave me a unique, interdisciplinary perspective.
+    </p>
+
+    <div style="display: flex; gap: 2rem; align-items: center; margin: 3rem 0; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 300px;">
+        <h2 style="color: #1565c0;">The Eagle & Scientific Discovery</h2>
+        <p>
+          One of my favorite things about Cambridge was learning the history of the city itself. I loved visiting <strong>The Eagle</strong>, 
+          the famous pub where Watson and Crick announced their discovery of the structure of DNA. Standing in the same spots 
+          where monumental scientific history was made was truly inspiring.
+        </p>
+      </div>
+      <img src={`${base}/me.jpeg`} alt="Me in Cambridge" style="width: 280px; height: 350px; object-fit: cover; border-radius: 15px; box-shadow: 15px 15px 0px #e3f2fd;" />
+    </div>
+
+    <h2 style="color: #1565c0;">Exploring Europe</h2>
+    <p>
+      When I wasn't in class, I was traveling! I had the chance to visit <strong>Paris, Edinburgh, and Bath</strong>, and even managed 
+      to see <strong>Stonehenge</strong>. Experiencing these new cultures and worldviews was just as educational as the courses themselves. 
+      I loved the challenge and excitement of navigating new cities and meeting people from across the globe.
+    </p>
+
+    <footer style="margin-top: 5rem; padding-top: 2rem; border-top: 1px solid #eee;">
+      <a href={`${base}/blog`} style="color: #1565c0; text-decoration: none; font-weight: bold;">← Back to Blog Feed</a>
+    </footer>
+  </article>
+</Layout>
