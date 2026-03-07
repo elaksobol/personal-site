@@ -2,8 +2,9 @@
 import Layout from '../../layouts/Layout.astro';
 const base = '/personal-site';
 
-// Your 14-photo gallery array (1.jpeg through 14.jpeg)
-const photos = Array.from({ length: 14 }, (_, i) => `${i + 1}.jpeg`);
+// Create the initial array of 14, then filter out 10 and 12
+const photos = Array.from({ length: 14 }, (_, i) => `${i + 1}.jpeg`)
+  .filter(photo => photo !== '10.jpeg' && photo !== '12.jpeg');
 ---
 
 <Layout title="Cambridge Summer | Ela Sobol">
@@ -43,12 +44,13 @@ const photos = Array.from({ length: 14 }, (_, i) => `${i + 1}.jpeg`);
 
     <h2 style="color: #1565c0; margin-bottom: 0.5rem;">Exploring Europe</h2>
     <p style="margin-bottom: 2rem;">
-      When I wasn't in classes, I got the chance to travel! I took the train to Paris on one weekend, Edinburgh on another, and went on a group tour bus trip to see Bath, and
+      When I wasn't in classes, I got the chance to travel! I took the train to Paris one weekend, Edinburgh on another, and went on a group tour bus trip to see Bath, and
       Stonehenge. Witnessing these famous sights and learning about new cultures was just as educational as my classes themselves. 
       I loved the challenge and excitement of navigating new cities and meeting strangers from around the world.
     </p>
 
     <h2 style="color: #1565c0; margin-top: 2rem; margin-bottom: 1rem; text-align: center;">Gallery</h2>
+    
     <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px;">
       {photos.map((photo) => (
         <img 
