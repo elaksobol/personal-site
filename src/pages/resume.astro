@@ -6,14 +6,15 @@ const base = '/personal-site';
 <Layout title="Resume | Ela Sobol">
   <main style="max-width: 900px; margin: 0 auto; padding: 3rem 2rem; font-family: 'Helvetica Neue', Arial, sans-serif; color: #333; line-height: 1.6;">
     
-    <header style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2.5rem; border-bottom: 2px solid #333; padding-bottom: 20px;">
-      <div>
+    <header style="display: flex; align-items: center; gap: 2.5rem; margin-bottom: 2.5rem; border-bottom: 2px solid #333; padding-bottom: 20px; flex-wrap: wrap;">
+      <img src={`${base}/resume.jpeg`} alt="Ela Sobol" style="width: 160px; height: 200px; border-radius: 10px; object-fit: cover; box-shadow: 5px 5px 15px rgba(0,0,0,0.1);" />
+      
+      <div style="flex: 1; min-width: 300px;">
         <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem; color: #1a1a1a; text-transform: uppercase;">ELA SOBOL</h1>
         <p style="font-size: 1.1rem; margin: 0;">
           Centreville, VA • 703-405-6001 • <a href="mailto:elaksobol@gmail.com" style="color: #007bff; text-decoration: none;">elaksobol@gmail.com</a>
         </p>
       </div>
-      <img src={`${base}/resume.jpeg`} alt="Ela Sobol" style="width: 160px; height: 200px; border-radius: 10px; object-fit: cover; box-shadow: 5px 5px 15px rgba(0,0,0,0.1);" />
     </header>
 
     <section style="margin-bottom: 2rem;">
@@ -40,77 +41,3 @@ const base = '/personal-site';
     <section style="margin-bottom: 2rem;">
       <h2 style="text-transform: uppercase; letter-spacing: 1px; font-size: 1.3rem; margin-bottom: 10px;">Research Experience</h2>
       <div style="margin-top: 0.5rem;">
-        <div style="display: flex; justify-content: space-between; font-weight: bold;">
-          <span>DiGI Lab Research Assistant, William & Mary</span>
-          <span>August 2025 - Present</span>
-        </div>
-        <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
-          <li>Assisted in faculty psychology research by collecting, cleaning, and analyzing data</li>
-          <li>Collaborated with faculty and peers to meet timelines and follow ethical standards</li>
-        </ul>
-      </div>
-      <div style="margin-top: 1.5rem;">
-        <div style="display: flex; justify-content: space-between; font-weight: bold;">
-          <span>Presenter, William & Mary Research Symposium</span>
-          <span>September 2025</span>
-        </div>
-        <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
-          <li>Analyzed psychology research data using SPSS and interpreted statistical results</li>
-          <li>Presented original research findings at an undergraduate symposium, effectively communicating methods, results, and implications to an academic audience</li>
-        </ul>
-      </div>
-    </section>
-
-    <section style="margin-bottom: 2rem;">
-      <h2 style="text-transform: uppercase; letter-spacing: 1px; font-size: 1.3rem; margin-bottom: 10px;">Leadership Experience</h2>
-      <div style="margin-top: 0.5rem;">
-        <div style="display: flex; justify-content: space-between; font-weight: bold;">
-          <span>Campus Tour Guide, Undergraduate Admission, William & Mary</span>
-          <span>September 2025 - Present</span>
-        </div>
-        <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
-          <li>Selected through a competitive process to represent the university and deliver structured, audience-tailored presentation tours to prospective students and parents</li>
-        </ul>
-      </div>
-      <div style="margin-top: 1.5rem;">
-        <div style="display: flex; justify-content: space-between; font-weight: bold;">
-          <span>President, Pointe Blank Dance Company, William & Mary</span>
-          <span>December 2025 - Present</span>
-        </div>
-        <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
-          <li>Managed scheduling, logistics, and internal operations for a 70-member dance organization, ensuring the smooth coordination of meetings, rehearsals, and showcases</li>
-          <li>Oversaw the executive board through the planning and execution of company initiatives</li>
-        </ul>
-      </div>
-      <div style="margin-top: 1.5rem;">
-        <div style="display: flex; justify-content: space-between; font-weight: bold;">
-          <span>Historian, Alpha Chi Omega, William & Mary</span>
-          <span>December 2025 – Present</span>
-        </div>
-        <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
-          <li>Synthesized ongoing chapter events into clear documentation for members and leadership</li>
-        </ul>
-      </div>
-    </section>
-
-    <section style="margin-bottom: 2rem;">
-      <h2 style="text-transform: uppercase; letter-spacing: 1px; font-size: 1.3rem; margin-bottom: 10px;">Additional Experience</h2>
-      <div style="margin-top: 0.5rem;">
-        <div style="display: flex; justify-content: space-between; font-weight: bold;">
-          <span>Substitute Teacher, Fairfax County Public Schools, Fairfax County, VA</span>
-          <span>May 2024 - Present</span>
-        </div>
-        <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
-          <li>Delivered engaging and effective instruction across a variety of subjects and grade levels to over 2,500 students</li>
-          <li>Adapted quickly to diverse classroom settings, ensuring continuity of learning in the absence of the typical instructor</li>
-          <li>Facilitated communication between students and staff to address academic and behavioral needs when necessary</li>
-        </ul>
-      </div>
-    </section>
-
-    <footer style="margin-top: 4rem; text-align: center; border-top: 1px solid #eee; padding-top: 1rem;">
-      <a href={`${base}/`} style="color: #007bff; text-decoration: none; font-weight: bold;">← Return to Home</a>
-    </footer>
-
-  </main>
-</Layout>
